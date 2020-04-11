@@ -14,7 +14,7 @@ def time_exec(f):
 @time_exec
 def main():
     for i in range(1):    
-        for sub in sub_file(i)[:10]:
+        for sub in sub_file(i):
             ids = get_comment_ids(sub['id'])
             get_comments(ids)
 
